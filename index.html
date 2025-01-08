@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Almuerzos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>Lista de Almuerzos</h1>
+  
+  <form id="lunchForm">
+    <label for="name">Nombre del trabajador:</label>
+    <!-- <input type="text" id="name" required> -->
+    <select name="name" id="">
+        <option value="Marcelo">Marcelo Tapia</option>
+        <option value="Max">Max Persolja</option>
+        <option value="Amdrea">Andrea Concha</option>
+        <option value="Manuel">Manuel Figueroa</option>
+        <option value="Fernando">Fernando Villalobos</option>
+        <option value="Jordy">Jordy Gonzalez</option> 
+        <option value="Luisi">Luis Ibañez</option> 
+        <option value="Beno">Beno Santander</option>
+        <option value="Cristian">Cristian Moraga</option>
+        <option value="Fabian">Fabian Moraga</option>
+        <option value="Cristians">Cristian Santader</option>
+        <option value="Ale">Ale Santander</option>
+        <option value="Victorc">Victor Castro</option>
+        <option value="Victors">Victor Segura</option>
+        <option value="Alan">Alan </option>
+        <option value="Richard">Richard</option>
+        <option value="Juan">Juan Malaya</option>
+        <option value="Miguel">Miguel Angel</option>
+        <option value="Nelson">Nelson Mauri</option>
+        <option value="Osvaldo">Don che</option>
+        <option value="Jhony">jhony</option>
+        <option value="Luisf">Luis Felipe</option>
+        <option value="Felipev">Felipe Vicencio</option> 
+        <option value="Felipev">Abel Fuentes</option> 
+        <option value="Felipev">Vicente Campos</option> 
+    </select>
+    
+    <label for="lunchOption">Almuerzo:</label>
+    <input type="text" id="lunchOption" placeholder="Escribe el almuerzo" required>
+    
+    <label for="notes">Notas adicionales:</label>
+    <textarea id="notes" rows="3"></textarea>
+
+    <label for="date">Fecha:</label>
+    <input type="date" id="date" required>
+    
+    <button type="submit">Agregar</button>
+  </form>
+
+  <ul id="lunchList"></ul>
+
+  <button id="generatePDF">Generar PDF</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
